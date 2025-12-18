@@ -27,25 +27,57 @@
         <header>
             <!-- place navbar here -->
         </header>
+        <div id="app">
         <main class="container d-flex justify-content-center align-items-center text-center m-3">
-            <div class="row d-flex justify-content-center align-items-center text-center intro">
+            <div class="row justify-content-center align-items-center text-center intro" v-show="!start">
                 <!-- start btn, basically a loading screen -->
-                 <div class="col-md-7 text-center">
+                 <div class="col-md-7 text-center" >
                     <h1 class="titleHeader">Welcome to the Secret Santa Gift Selector!</h1>
                     <h6 class="subtitle">Here, you will use this website as inspiration for buying a gift for a 
                         loved one or friend during the holiday season.</h6>
-                    <button class="btn" :class="d-none" @click="startGame(start)">Start</button>
+                        <!-- put budget and user's name here -->
+
+                    <form id="inputNameThenBudget">
+                    <label for="theName">Input your name here: </label>
+                    <br>
+                    <input id="theName"></input>
+                    <br>
+                    <label for="budget">What budget would you like the gifts to be? </label>
+                    <br>
+                    <input id="budget"></input>
+                 </form>
+                    <button class="btn" @click="startGame(true)">Start</button>
                  </div>
             </div>
-            <div class="row justify-content-center align-items-center g-2 inputNamesToWheel d-none" :class="d-block">
+            <div class="row justify-content-center align-items-center g-2 inputNamesToWheel" v-show="start">
                 <!-- input field w/ submit-->
-
+                 <div class="col">
+                 <form id="inputNames">
+                    <label for="theNames">Input your friends' names here: </label>
+                    <br>
+                    <textarea id="theNames" style="width: 500px; height:300px;"></textarea>
+                 </form>
+                 </div>
                  <!-- wheel just spinning and chilling there while it gets added to -->
-                  
+                  <div class="col">
+                    <button id="spin">spin</button>
+                <span class="arrow"></span>
+                <div class="wheelContainer">
+                    <div class="one">124</div>
+                    <div class="two">2</div>
+                    <div class="three">3</div>
+                    <div class="four">4</div>
+                    <div class="five">5</div>
+                    <div class="six">6</div>
+                    <div class="seven">7</div>
+                    <div class="eight">8</div>
+                </div>
+                  </div>
               
             </div>
             
         </main>
+    </div>
         <footer>
             <!-- place footer here -->
         </footer>

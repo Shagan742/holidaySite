@@ -1,23 +1,30 @@
-//make a wheel of names
+
 const vue_app = Vue.createApp({
     created() {
-        fetch('names.json', 'items.json').then(response => response.json()).then(json => {
+        fetch('names.json').then(response => response.json()).then(json => {
                   this.names = json
+            })
+
+            fetch('items.json').then(response => response.json()).then(json => {
                   this.items = json
             })
     },
     data() {
         return {
             names: [],//names array
-            items: []//items array
+            items: [],//items array
+            start: false
         }
     },
     methods: {
         //adding all methods here
-        startGame: function(start) {
+        startGame: function(starT) {
             //show the wheel+input field for names
-            start=true;
+            this.start=starT;
+            
         }
     }
     
 })
+
+vue_app.mount('#app')
