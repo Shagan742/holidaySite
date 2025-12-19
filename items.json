@@ -1,110 +1,425 @@
+
 [
-    {
-        "picture":"https://picsum.photos/id/1058/600/400",
-        "price":4.09,
-        "description":"something",
-        "giftName":"jdkdjdk"
-    },
-    {
-        "picture":"https://picsum.photos/id/1058/600/400",
-        "price":4.09,
-        "description":"something",
-        "giftName":"jdkdjdk"
-    },
-    {
-        "picture":"https://picsum.photos/id/1058/600/400",
-        "price":4.09,
-        "description":"something",
-        "giftName":"jdkdjdk"
-    },
-    {
-        "picture":"https://picsum.photos/id/1058/600/400",
-        "price":4.09,
-        "description":"something",
-        "giftName":"jdkdjdk"
-    },
-    {
-        "picture":"https://picsum.photos/id/1058/600/400",
-        "price":4.09,
-        "description":"something",
-        "giftName":"jdkdjdk"
-    },
-    {
-        "picture":"https://picsum.photos/id/1058/600/400",
-        "price":4.09,
-        "description":"something",
-        "giftName":"jdkdjdk"
-    },
-    {
-        "picture":"https://picsum.photos/id/1058/600/400",
-        "price":4.09,
-        "description":"something",
-        "giftName":"jdkdjdk"
-    },
-    {
-        "picture":"https://picsum.photos/id/1058/600/400",
-        "price":4.09,
-        "description":"something",
-        "giftName":"jdkdjdk"
-    },
-    {
-        "picture":"https://picsum.photos/id/1058/600/400",
-        "price":4.09,
-        "description":"something",
-        "giftName":"jdkdjdk"
-    },
-    {
-        "picture":"https://picsum.photos/id/1058/600/400",
-        "price":4.09,
-        "description":"something",
-        "giftName":"jdkdjdk"
-    },
-    {
-        "picture":"https://picsum.photos/id/1058/600/400",
-        "price":4.09,
-        "description":"something",
-        "giftName":"jdkdjdk"
-    },
-    {
-        "picture":"https://picsum.photos/id/1058/600/400",
-        "price":4.09,
-        "description":"something",
-        "giftName":"jdkdjdk"
-    },
-    {
-        "picture":"https://picsum.photos/id/1058/600/400",
-        "price":4.09,
-        "description":"something",
-        "giftName":"jdkdjdk"
-    },
-    {
-        "picture":"https://picsum.photos/id/1058/600/400",
-        "price":4.09,
-        "description":"something",
-        "giftName":"jdkdjdk"
-    },
-    {
-        "picture":"https://picsum.photos/id/1058/600/400",
-        "price":4.09,
-        "description":"something",
-        "giftName":"jdkdjdk"
-    },
-    {
-        "picture":"https://picsum.photos/id/1058/600/400",
-        "price":4.09,
-        "description":"something",
-        "giftName":"jdkdjdk"
-    },
-    {
-        "picture":"https://picsum.photos/id/1058/600/400",
-        "price":4.09,
-        "description":"something",
-        "giftName":"jdkdjdk"
-    },
-    {
-        "picture":"https://picsum.photos/id/1058/600/400",
-        "price":4.09,
-        "description":"something",
-        "giftName":"jdkdjdk"
-    }
+  {
+    "picture": "https://picsum.photos/id/1011/600/400",
+    "price": 0.00,
+    "description": "A handwritten holiday card with a personal message",
+    "giftName": "Handwritten Christmas Card",
+    "source": "https://www.google.com/search?q=handwritten+christmas+card+ideas"
+  },
+  {
+    "picture": "https://picsum.photos/id/1025/600/400",
+    "price": 3.99,
+    "description": "Festive fuzzy socks to keep feet warm during winter",
+    "giftName": "Cozy Holiday Socks",
+    "source": "https://www.amazon.com/s?k=holiday+fuzzy+socks"
+  },
+  {
+    "picture": "https://picsum.photos/id/1035/600/400",
+    "price": 5.49,
+    "description": "Small scented candle with a winter fragrance",
+    "giftName": "Mini Scented Candle",
+    "source": "https://www.amazon.com/s?k=mini+scented+candle"
+  },
+  {
+    "picture": "https://picsum.photos/id/1040/600/400",
+    "price": 4.99,
+    "description": "Hot chocolate packets perfect for cold nights",
+    "giftName": "Hot Cocoa Set",
+    "source": "https://www.amazon.com/s?k=hot+cocoa+packets"
+  },
+  {
+    "picture": "https://picsum.photos/id/1050/600/400",
+    "price": 2.50,
+    "description": "Fun novelty keychain for keys or bags",
+    "giftName": "Novelty Keychain",
+    "source": "https://www.etsy.com/search?q=novelty+keychain"
+  },
+  {
+    "picture": "https://picsum.photos/id/1060/600/400",
+    "price": 6.99,
+    "description": "Travel-size hand lotion for dry winter hands",
+    "giftName": "Hand Lotion",
+    "source": "https://www.amazon.com/s?k=travel+size+hand+lotion"
+  },
+  {
+    "picture": "https://picsum.photos/id/1070/600/400",
+    "price": 7.99,
+    "description": "Ceramic mug with a festive or funny design",
+    "giftName": "Holiday Mug",
+    "source": "https://www.amazon.com/s?k=holiday+coffee+mug"
+  },
+  {
+    "picture": "https://picsum.photos/id/1080/600/400",
+    "price": 1.99,
+    "description": "Lip balm to protect lips from winter weather",
+    "giftName": "Lip Balm",
+    "source": "https://www.amazon.com/s?k=lip+balm"
+  },
+  {
+    "picture": "https://picsum.photos/id/1084/600/400",
+    "price": 9.99,
+    "description": "Mini card game great for travel or game nights",
+    "giftName": "Pocket Card Game",
+    "source": "https://www.amazon.com/s?k=travel+card+game"
+  },
+  {
+    "picture": "https://picsum.photos/id/1081/600/400",
+    "price": 4.25,
+    "description": "Small notebook for notes, sketches, or journaling",
+    "giftName": "Pocket Notebook",
+    "source": "https://www.amazon.com/s?k=pocket+notebook"
+  },
+  {
+    "picture": "https://picsum.photos/id/1082/600/400",
+    "price": 3.50,
+    "description": "Reusable eco-friendly shopping bag",
+    "giftName": "Reusable Tote Bag",
+    "source": "https://www.amazon.com/s?k=reusable+tote+bag"
+  },
+  {
+    "picture": "https://picsum.photos/id/1083/600/400",
+    "price": 6.49,
+    "description": "Cute holiday ornament for decorating the tree",
+    "giftName": "Christmas Ornament",
+    "source": "https://www.amazon.com/s?k=christmas+ornament"
+  },
+  {
+    "picture": "https://picsum.photos/id/1085/600/400",
+    "price": 5.99,
+    "description": "Scented hand soap with seasonal fragrance",
+    "giftName": "Holiday Hand Soap",
+    "source": "https://www.amazon.com/s?k=holiday+hand+soap"
+  },
+  {
+    "picture": "https://picsum.photos/id/1086/600/400",
+    "price": 10.00,
+    "description": "Stylish insulated travel coffee cup",
+    "giftName": "Travel Coffee Cup",
+    "source": "https://www.amazon.com/s?k=travel+coffee+cup"
+  },
+  {
+    "picture": "https://picsum.photos/id/1087/600/400",
+    "price": 2.00,
+    "description": "Scratch-off lottery ticket for a fun surprise",
+    "giftName": "Lottery Ticket",
+    "source": "https://www.google.com/search?q=scratch+off+lottery+ticket"
+  },
+  {
+    "picture": "https://picsum.photos/id/1088/600/400",
+    "price": 8.99,
+    "description": "Puzzle or brain teaser for all ages",
+    "giftName": "Mini Brain Teaser",
+    "source": "https://www.amazon.com/s?k=brain+teaser+puzzle"
+  },
+  {
+    "picture": "https://picsum.photos/id/1089/600/400",
+    "price": 12.99,
+    "description": "Soft winter beanie hat",
+    "giftName": "Winter Beanie",
+    "source": "https://www.amazon.com/s?k=winter+beanie"
+  },
+  {
+    "picture": "https://picsum.photos/id/1090/600/400",
+    "price": 6.00,
+    "description": "Tea sampler with assorted flavors",
+    "giftName": "Tea Sampler",
+    "source": "https://www.amazon.com/s?k=tea+sampler"
+  },
+  {
+    "picture": "https://picsum.photos/id/1091/600/400",
+    "price": 14.99,
+    "description": "Desk plant or small succulent",
+    "giftName": "Mini Succulent",
+    "source": "https://www.amazon.com/s?k=mini+succulent+plant"
+  },
+  {
+    "picture": "https://picsum.photos/id/1092/600/400",
+    "price": 5.00,
+    "description": "Holiday-themed candy or chocolate treat",
+    "giftName": "Christmas Candy",
+    "source": "https://www.amazon.com/s?k=christmas+candy"
+  }, 
+  {
+    "picture": "https://picsum.photos/id/1101/600/400",
+    "price": 16.99,
+    "description": "Soft fleece throw blanket for cozy winter nights",
+    "giftName": "Fleece Throw Blanket",
+    "source": "https://www.amazon.com/s?k=fleece+throw+blanket"
+  },
+  {
+    "picture": "https://picsum.photos/id/1102/600/400",
+    "price": 18.50,
+    "description": "Insulated stainless steel water bottle",
+    "giftName": "Insulated Water Bottle",
+    "source": "https://www.amazon.com/s?k=insulated+water+bottle"
+  },
+  {
+    "picture": "https://picsum.photos/id/1103/600/400",
+    "price": 19.99,
+    "description": "Bluetooth shower speaker with water resistance",
+    "giftName": "Bluetooth Shower Speaker",
+    "source": "https://www.amazon.com/s?k=bluetooth+shower+speaker"
+  },
+  {
+    "picture": "https://picsum.photos/id/1104/600/400",
+    "price": 22.00,
+    "description": "Aromatherapy candle gift set with multiple scents",
+    "giftName": "Candle Gift Set",
+    "source": "https://www.amazon.com/s?k=candle+gift+set"
+  },
+  {
+    "picture": "https://picsum.photos/id/1105/600/400",
+    "price": 17.99,
+    "description": "Leather-style journal with thick premium pages",
+    "giftName": "Premium Journal",
+    "source": "https://www.amazon.com/s?k=leather+journal"
+  },
+  {
+    "picture": "https://picsum.photos/id/1106/600/400",
+    "price": 24.99,
+    "description": "Electric mug warmer for coffee or tea",
+    "giftName": "Mug Warmer",
+    "source": "https://www.amazon.com/s?k=coffee+mug+warmer"
+  },
+  {
+    "picture": "https://picsum.photos/id/1107/600/400",
+    "price": 29.99,
+    "description": "Soft-touch LED desk lamp with adjustable brightness",
+    "giftName": "LED Desk Lamp",
+    "source": "https://www.amazon.com/s?k=led+desk+lamp"
+  },
+  {
+    "picture": "https://picsum.photos/id/1108/600/400",
+    "price": 21.49,
+    "description": "Weighted eye mask for relaxation and sleep",
+    "giftName": "Weighted Sleep Mask",
+    "source": "https://www.amazon.com/s?k=weighted+sleep+mask"
+  },
+  {
+    "picture": "https://picsum.photos/id/1109/600/400",
+    "price": 34.99,
+    "description": "Compact lap desk for working on a couch or bed",
+    "giftName": "Lap Desk",
+    "source": "https://www.amazon.com/s?k=lap+desk"
+  },
+  {
+    "picture": "https://picsum.photos/id/1110/600/400",
+    "price": 26.00,
+    "description": "Essential oil diffuser with color-changing lights",
+    "giftName": "Essential Oil Diffuser",
+    "source": "https://www.amazon.com/s?k=essential+oil+diffuser"
+  },
+  {
+    "picture": "https://picsum.photos/id/1111/600/400",
+    "price": 18.99,
+    "description": "Luxury hand soap and lotion gift set",
+    "giftName": "Hand Care Gift Set",
+    "source": "https://www.amazon.com/s?k=hand+soap+gift+set"
+  },
+  {
+    "picture": "https://picsum.photos/id/1112/600/400",
+    "price": 27.50,
+    "description": "Weekly meal planner board with markers",
+    "giftName": "Meal Planner Board",
+    "source": "https://www.amazon.com/s?k=meal+planner+board"
+  },
+  {
+    "picture": "https://picsum.photos/id/1113/600/400",
+    "price": 23.99,
+    "description": "Quality chef-style kitchen knife",
+    "giftName": "Chef Knife",
+    "source": "https://www.amazon.com/s?k=chef+knife"
+  },
+  {
+    "picture": "https://picsum.photos/id/1114/600/400",
+    "price": 31.99,
+    "description": "Board game suitable for families or groups",
+    "giftName": "Family Board Game",
+    "source": "https://www.amazon.com/s?k=family+board+game"
+  },
+  {
+    "picture": "https://picsum.photos/id/1115/600/400",
+    "price": 20.00,
+    "description": "Luxury bath bomb set with natural ingredients",
+    "giftName": "Bath Bomb Set",
+    "source": "https://www.amazon.com/s?k=bath+bomb+set"
+  },
+  {
+    "picture": "https://picsum.photos/id/1116/600/400",
+    "price": 28.99,
+    "description": "Car phone mount with adjustable grip",
+    "giftName": "Car Phone Mount",
+    "source": "https://www.amazon.com/s?k=car+phone+mount"
+  },
+  {
+    "picture": "https://picsum.photos/id/1117/600/400",
+    "price": 19.50,
+    "description": "Coffee sampler featuring multiple roast styles",
+    "giftName": "Coffee Sampler Pack",
+    "source": "https://www.amazon.com/s?k=coffee+sampler"
+  },
+  {
+    "picture": "https://picsum.photos/id/1118/600/400",
+    "price": 32.99,
+    "description": "Soft microfiber bath towel set",
+    "giftName": "Bath Towel Set",
+    "source": "https://www.amazon.com/s?k=bath+towel+set"
+  },
+  {
+    "picture": "https://picsum.photos/id/1119/600/400",
+    "price": 25.00,
+    "description": "Adjustable yoga strap and block set",
+    "giftName": "Yoga Accessory Set",
+    "source": "https://www.amazon.com/s?k=yoga+block+and+strap"
+  },
+  {
+    "picture": "https://picsum.photos/id/1120/600/400",
+    "price": 35.00,
+    "description": "Wireless charging stand for phones and earbuds",
+    "giftName": "Wireless Charging Stand",
+    "source": "https://www.amazon.com/s?k=wireless+charging+stand"
+  }, 
+  {
+    "picture": "https://picsum.photos/id/1201/600/400",
+    "price": 36.99,
+    "description": "Plush weighted blanket for relaxation and comfort",
+    "giftName": "Weighted Blanket",
+    "source": "https://www.amazon.com/s?k=weighted+blanket"
+  },
+  {
+    "picture": "https://picsum.photos/id/1202/600/400",
+    "price": 39.99,
+    "description": "Over-ear Bluetooth headphones with noise isolation",
+    "giftName": "Bluetooth Headphones",
+    "source": "https://www.amazon.com/s?k=bluetooth+headphones"
+  },
+  {
+    "picture": "https://picsum.photos/id/1203/600/400",
+    "price": 44.99,
+    "description": "High-quality knife block with essential kitchen knives",
+    "giftName": "Knife Set",
+    "source": "https://www.amazon.com/s?k=kitchen+knife+set"
+  },
+  {
+    "picture": "https://picsum.photos/id/1204/600/400",
+    "price": 37.50,
+    "description": "Luxury throw pillow covers with modern design",
+    "giftName": "Decorative Pillow Set",
+    "source": "https://www.amazon.com/s?k=decorative+throw+pillows"
+  },
+  {
+    "picture": "https://picsum.photos/id/1205/600/400",
+    "price": 42.00,
+    "description": "Premium essential oil collection for aromatherapy",
+    "giftName": "Essential Oil Set",
+    "source": "https://www.amazon.com/s?k=essential+oil+set"
+  },
+  {
+    "picture": "https://picsum.photos/id/1206/600/400",
+    "price": 49.99,
+    "description": "Compact indoor tabletop fire pit for ambiance",
+    "giftName": "Tabletop Fire Pit",
+    "source": "https://www.amazon.com/s?k=tabletop+fire+pit"
+  },
+  {
+    "picture": "https://picsum.photos/id/1207/600/400",
+    "price": 38.99,
+    "description": "Electric milk frother for coffee and lattes",
+    "giftName": "Electric Milk Frother",
+    "source": "https://www.amazon.com/s?k=electric+milk+frother"
+  },
+  {
+    "picture": "https://picsum.photos/id/1208/600/400",
+    "price": 45.00,
+    "description": "Luxury bath robe made from soft microfiber",
+    "giftName": "Plush Bath Robe",
+    "source": "https://www.amazon.com/s?k=plush+bath+robe"
+  },
+  {
+    "picture": "https://picsum.photos/id/1209/600/400",
+    "price": 36.50,
+    "description": "High-speed wireless charging pad",
+    "giftName": "Fast Wireless Charger",
+    "source": "https://www.amazon.com/s?k=fast+wireless+charger"
+  },
+  {
+    "picture": "https://picsum.photos/id/1210/600/400",
+    "price": 47.99,
+    "description": "Deluxe board game for strategy lovers",
+    "giftName": "Strategy Board Game",
+    "source": "https://www.amazon.com/s?k=strategy+board+game"
+  },
+  {
+    "picture": "https://picsum.photos/id/1211/600/400",
+    "price": 40.00,
+    "description": "Premium yoga mat with non-slip grip",
+    "giftName": "Premium Yoga Mat",
+    "source": "https://www.amazon.com/s?k=premium+yoga+mat"
+  },
+  {
+    "picture": "https://picsum.photos/id/1212/600/400",
+    "price": 48.99,
+    "description": "Modern desk organizer with wireless charging",
+    "giftName": "Smart Desk Organizer",
+    "source": "https://www.amazon.com/s?k=desk+organizer+with+wireless+charging"
+  },
+  {
+    "picture": "https://picsum.photos/id/1213/600/400",
+    "price": 41.25,
+    "description": "Electric heating pad with adjustable settings",
+    "giftName": "Heating Pad",
+    "source": "https://www.amazon.com/s?k=electric+heating+pad"
+  },
+  {
+    "picture": "https://picsum.photos/id/1214/600/400",
+    "price": 46.50,
+    "description": "Stylish leather wallet with RFID protection",
+    "giftName": "RFID Leather Wallet",
+    "source": "https://www.amazon.com/s?k=rfid+leather+wallet"
+  },
+  {
+    "picture": "https://picsum.photos/id/1215/600/400",
+    "price": 39.50,
+    "description": "High-end French press coffee maker",
+    "giftName": "French Press Coffee Maker",
+    "source": "https://www.amazon.com/s?k=french+press+coffee+maker"
+  },
+  {
+    "picture": "https://picsum.photos/id/1216/600/400",
+    "price": 49.00,
+    "description": "Massage gun with multiple speed settings",
+    "giftName": "Mini Massage Gun",
+    "source": "https://www.amazon.com/s?k=mini+massage+gun"
+  },
+  {
+    "picture": "https://picsum.photos/id/1217/600/400",
+    "price": 37.99,
+    "description": "Smart LED light strips with app control",
+    "giftName": "Smart LED Light Strips",
+    "source": "https://www.amazon.com/s?k=smart+led+light+strip"
+  },
+  {
+    "picture": "https://picsum.photos/id/1218/600/400",
+    "price": 43.75,
+    "description": "Luxury scented candle set in glass jars",
+    "giftName": "Luxury Candle Set",
+    "source": "https://www.amazon.com/s?k=luxury+candle+set"
+  },
+  {
+    "picture": "https://picsum.photos/id/1219/600/400",
+    "price": 36.00,
+    "description": "Car emergency kit with essential tools",
+    "giftName": "Car Emergency Kit",
+    "source": "https://www.amazon.com/s?k=car+emergency+kit"
+  },
+  {
+    "picture": "https://picsum.photos/id/1220/600/400",
+    "price": 50.00,
+    "description": "Premium Bluetooth speaker with deep bass",
+    "giftName": "Portable Bluetooth Speaker",
+    "source": "https://www.amazon.com/s?k=portable+bluetooth+speaker"
+  }
 ]
+
+

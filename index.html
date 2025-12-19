@@ -40,37 +40,35 @@
                     <form id="inputNameThenBudget">
                     <label for="theName">Input your name here: </label>
                     <br>
-                    <input id="theName"></input>
+                    <input id="theName" v-model="userName"></input>
                     <br>
                     <label for="budget">What budget would you like the gifts to be? </label>
                     <br>
-                    <input id="budget"></input>
+                    <input id="budget" v-model="budget"></input>
                  </form>
                     <button class="btn" @click="startGame(true)">Start</button>
                  </div>
             </div>
             <div class="row justify-content-center align-items-center g-2 inputNamesToWheel" v-show="start">
                 <!-- input field w/ submit-->
-                 <div class="col">
+                 <div class="col-md-5 mx-3">
                  <form id="inputNames">
                     <label for="theNames">Input your friends' names here: </label>
                     <br>
-                    <textarea id="theNames" style="width: 500px; height:300px;"></textarea>
+                    <textarea id="theNames" style="width: 400px; height:300px;" v-model="putName"></textarea>
+                    <button type="button" id="submitName" class="btn" @click="putNames">Submit</button>
                  </form>
                  </div>
                  <!-- wheel just spinning and chilling there while it gets added to -->
-                  <div class="col">
-                    <button id="spin">spin</button>
+                  <div class="col-md-5 mx-3">
+                    
                 <span class="arrow"></span>
                 <div class="wheelContainer">
-                    <div class="one">124</div>
-                    <div class="two">2</div>
-                    <div class="three">3</div>
-                    <div class="four">4</div>
-                    <div class="five">5</div>
-                    <div class="six">6</div>
-                    <div class="seven">7</div>
-                    <div class="eight">8</div>
+                    
+                    <button id="spin">spin</button>
+                    <div class="slice" v-for="(name, index) in names" :style="{ transform: 'rotate(' + (index * rotateSlice) + 'deg)', width: sliceSize + 'px', 'margin-left': -(sliceSize/2) + 'px', 
+                    'background-color':'rgb(' + Math.random()*256 + ', ' + Math.random()*256 + ', ' + Math.random()*256 + ')', 'writing-mode':'vertical-lr', 'font-size':'16px' }">{{name}}</div>
+                    <!-- need to fix the background color thing -->
                 </div>
                   </div>
               
