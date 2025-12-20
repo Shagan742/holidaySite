@@ -1,97 +1,82 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <title>Secret Santa Gift Selector</title>
-        <!-- Required meta tags -->
-        <meta charset="utf-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
 
-        <!-- Bootstrap CSS v5.2.1 -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-            crossorigin="anonymous"
-        />
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="wheel.css">
-       <!-- Javascript Framework (e.g., vue.js) (ADD HERE) -->
-<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<head>
+    <title>Secret Santa Gift Selector</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    </head>
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="wheel.css">
+    <!-- Javascript Framework (e.g., vue.js) (ADD HERE) -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
-    <body>
-        <header>
-            <!-- place navbar here -->
-        </header>
-        <div id="app">
+</head>
+
+<body>
+    <header>
+        <!-- place navbar here -->
+    </header>
+    <div id="app">
         <main class="container d-flex justify-content-center align-items-center text-center m-3">
             <div class="row justify-content-center align-items-center text-center intro" v-show="!start">
                 <!-- start btn, basically a loading screen -->
-                 <div class="col-md-7 text-center" >
+                <div class="col-md-7 text-center">
                     <h1 class="titleHeader">Welcome to the Secret Santa Gift Selector!</h1>
-                    <h6 class="subtitle">Here, you will use this website as inspiration for buying a gift for a 
+                    <h6 class="subtitle">Here, you will use this website as inspiration for buying a gift for a
                         loved one or friend during the holiday season.</h6>
-                        <!-- put budget and user's name here -->
+                    <!-- put budget and user's name here -->
 
                     <form id="inputNameThenBudget">
-                    <label for="theName">Input your name here: </label>
-                    <br>
-                    <input id="theName" v-model="userName"></input>
-                    <br>
-                    <label for="budget">What budget would you like the gifts to be? </label>
-                    <br>
-                    <input id="budget" v-model="budget"></input>
-                 </form>
-                    <button class="btn" @click="startGame(true)">Start</button>
-                 </div>
-            </div>
-            <div class="row justify-content-center align-items-center g-2 inputNamesToWheel" v-show="start">
-                <!-- input field w/ submit-->
-                 <div class="col-md-5 mx-3">
-                 <form id="inputNames">
-                    <label for="theNames">Input your friends' names here: </label>
-                    <br>
-                    <textarea id="theNames" style="width: 400px; height:300px;" v-model="putName"></textarea>
-                    <button type="button" id="submitName" class="btn" @click="putNames">Submit</button>
-                 </form>
-                 </div>
-                 <!-- wheel just spinning and chilling there while it gets added to -->
-                  <div class="col-md-5 mx-3">
-                    
-                <span class="arrow"></span>
-                <div class="wheelContainer">
-                    
-                    <button id="spin">spin</button>
-                    <div class="slice" v-for="(name, index) in names" :style="{ transform: 'rotate(' + (index * rotateSlice) + 'deg)', width: sliceSize + 'px', 'margin-left': -(sliceSize/2) + 'px', 
-                    'background-color':'rgb(' + Math.random()*256 + ', ' + Math.random()*256 + ', ' + Math.random()*256 + ')', 'writing-mode':'vertical-lr', 'font-size':'16px' }">{{name}}</div>
-                    <!-- need to fix the background color thing -->
+                        <label for="theName">Input your name here: </label>
+                        <br>
+                        <input id="theName" v-model="userName"></input>
+                        <br>
+                        <label for="budget">What budget would you like the gifts to be?</label>
+                        <br>
+                        <input id="budget" v-model="budget" type="number"></input>
+                    </form>
+                    <button class="btn" @click="startGame(true); filterItems">Start</button>
                 </div>
-                  </div>
-              
             </div>
-            
+            <div class="row justify-content-center align-items-center g-2" v-show="start">
+                <div class="col-md-12 col-sm-12 mx-3 justify-content-center">
+                    <div class="wheelWrap">
+                        <div class="wheelContainer">
+
+                            <button id="spin">Spin</button>
+                            <div class="wheel">
+                                <div class="slice" v-for="(item, index) in filterItems" :style="{ transform: 'rotate(' + (index * rotateSlice) + 'deg)',
+                        width: sliceSize + 'px', 'margin-left': -(sliceSize/2) + 'px', 
+                        'background-color': colors[Math.floor(Math.random()*colors.length)], 
+                        'writing-mode':'vertical-lr', 'font-size':'16px' }">{{item.giftName}}
+                                    <!--will change to gift boxes to maintain mystery--></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </main>
     </div>
-        <footer>
-            <!-- place footer here -->
-        </footer>
-        <!-- Bootstrap JavaScript Libraries -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"
-        ></script>
+    <footer>
+        <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
 
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-            crossorigin="anonymous"
-        ></script>
-        <script src="script.js"></script>
-        <!-- <script src="wheel.js"></script> -->
-    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="wheel.js"></script>
+    <!-- <script src="wheel.js"></script> -->
+</body>
+
 </html>
