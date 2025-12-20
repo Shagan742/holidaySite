@@ -41,9 +41,13 @@
                         <input id="budget" v-model="budget" type="number"> </input>
                     </form>
                     <button class="btn start" @click="startGame(true); filterItems">Start</button>
+                    <img :src="items[0].picture" alt="">
                 </div>
             </div>
-            <div class="row justify-content-center align-items-center g-2" v-show="start">
+            
+         <div class="row justify-content-center align-items-center g-2" v-show="start">
+                
+
                 <div class="col-md-12 col-sm-12 justify-content-center">
                     <div class="wheelWrap">
                         <div class="wheelContainer">
@@ -59,7 +63,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </main>
     </div>

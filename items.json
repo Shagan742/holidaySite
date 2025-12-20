@@ -1,140 +1,139 @@
-
 [
   {
-    "picture": "https://picsum.photos/id/1011/600/400",
+    "picture": "imgs/holidayCard.png",
     "price": 0.00,
     "description": "A handwritten holiday card with a personal message",
     "giftName": "Handwritten Christmas Card",
     "source": "https://www.google.com/search?q=handwritten+christmas+card+ideas"
   },
   {
-    "picture": "https://picsum.photos/id/1025/600/400",
+    "picture": "imgs/cozyHolidaySocks.png",
     "price": 3.99,
     "description": "Festive fuzzy socks to keep feet warm during winter",
     "giftName": "Cozy Holiday Socks",
     "source": "https://www.amazon.com/s?k=holiday+fuzzy+socks"
   },
   {
-    "picture": "https://picsum.photos/id/1035/600/400",
+    "picture": "imgs/miniScentedCandle.png",
     "price": 5.49,
     "description": "Small scented candle with a winter fragrance",
     "giftName": "Mini Scented Candle",
     "source": "https://www.amazon.com/s?k=mini+scented+candle"
   },
   {
-    "picture": "https://picsum.photos/id/1040/600/400",
+    "picture": "imgs/hotCocoaSet.png",
     "price": 4.99,
-    "description": "Hot chocolate packets perfect for cold nights",
+    "description": "Hot chocolate perfect for cold nights",
     "giftName": "Hot Cocoa Set",
     "source": "https://www.amazon.com/s?k=hot+cocoa+packets"
   },
   {
-    "picture": "https://picsum.photos/id/1050/600/400",
+    "picture": "imgs/noveltyKeychain.png",
     "price": 2.50,
     "description": "Fun novelty keychain for keys or bags",
     "giftName": "Novelty Keychain",
     "source": "https://www.etsy.com/search?q=novelty+keychain"
   },
   {
-    "picture": "https://picsum.photos/id/1060/600/400",
+    "picture": "imgs/handLotion.png",
     "price": 6.99,
     "description": "Travel-size hand lotion for dry winter hands",
     "giftName": "Hand Lotion",
     "source": "https://www.amazon.com/s?k=travel+size+hand+lotion"
   },
   {
-    "picture": "https://picsum.photos/id/1070/600/400",
+    "picture": "imgs/holidayMug.png",
     "price": 7.99,
     "description": "Ceramic mug with a festive or funny design",
     "giftName": "Holiday Mug",
     "source": "https://www.amazon.com/s?k=holiday+coffee+mug"
   },
   {
-    "picture": "https://picsum.photos/id/1080/600/400",
+    "picture": "imgs/lipBalm.png",
     "price": 1.99,
     "description": "Lip balm to protect lips from winter weather",
     "giftName": "Lip Balm",
     "source": "https://www.amazon.com/s?k=lip+balm"
   },
   {
-    "picture": "https://picsum.photos/id/1084/600/400",
+    "picture": "imgs/pocketCardGame.png",
     "price": 9.99,
     "description": "Mini card game great for travel or game nights",
     "giftName": "Pocket Card Game",
     "source": "https://www.amazon.com/s?k=travel+card+game"
   },
   {
-    "picture": "https://picsum.photos/id/1081/600/400",
+    "picture": "imgs/pocketNotebook.png",
     "price": 4.25,
     "description": "Small notebook for notes, sketches, or journaling",
     "giftName": "Pocket Notebook",
     "source": "https://www.amazon.com/s?k=pocket+notebook"
   },
   {
-    "picture": "https://picsum.photos/id/1082/600/400",
+    "picture": "imgs/reusableToteBag.png",
     "price": 3.50,
     "description": "Reusable eco-friendly shopping bag",
     "giftName": "Reusable Tote Bag",
     "source": "https://www.amazon.com/s?k=reusable+tote+bag"
   },
   {
-    "picture": "https://picsum.photos/id/1083/600/400",
+    "picture": "imgs/christmasOrnament.png",
     "price": 6.49,
     "description": "Cute holiday ornament for decorating the tree",
     "giftName": "Christmas Ornament",
     "source": "https://www.amazon.com/s?k=christmas+ornament"
   },
   {
-    "picture": "https://picsum.photos/id/1085/600/400",
+    "picture": "imgs/holidayHandSoap.png",
     "price": 5.99,
     "description": "Scented hand soap with seasonal fragrance",
     "giftName": "Holiday Hand Soap",
     "source": "https://www.amazon.com/s?k=holiday+hand+soap"
   },
   {
-    "picture": "https://picsum.photos/id/1086/600/400",
+    "picture": "imgs/travelCoffeeCup.png",
     "price": 10.00,
     "description": "Stylish insulated travel coffee cup",
     "giftName": "Travel Coffee Cup",
     "source": "https://www.amazon.com/s?k=travel+coffee+cup"
   },
   {
-    "picture": "https://picsum.photos/id/1087/600/400",
+    "picture": "imgs/lotteryTicket.png",
     "price": 2.00,
     "description": "Scratch-off lottery ticket for a fun surprise",
     "giftName": "Lottery Ticket",
     "source": "https://www.google.com/search?q=scratch+off+lottery+ticket"
   },
   {
-    "picture": "https://picsum.photos/id/1088/600/400",
+    "picture": "imgs/miniBrainTeaserToy.png",
     "price": 8.99,
     "description": "Puzzle or brain teaser for all ages",
     "giftName": "Mini Brain Teaser",
     "source": "https://www.amazon.com/s?k=brain+teaser+puzzle"
   },
   {
-    "picture": "https://picsum.photos/id/1089/600/400",
+    "picture": "imgs/winterBeanie.png",
     "price": 12.99,
     "description": "Soft winter beanie hat",
     "giftName": "Winter Beanie",
     "source": "https://www.amazon.com/s?k=winter+beanie"
   },
   {
-    "picture": "https://picsum.photos/id/1090/600/400",
+    "picture": "imgs/teaSampler.png",
     "price": 6.00,
     "description": "Tea sampler with assorted flavors",
     "giftName": "Tea Sampler",
     "source": "https://www.amazon.com/s?k=tea+sampler"
   },
   {
-    "picture": "https://picsum.photos/id/1091/600/400",
+    "picture": "imgs/miniSucculent.png",
     "price": 14.99,
     "description": "Desk plant or small succulent",
     "giftName": "Mini Succulent",
     "source": "https://www.amazon.com/s?k=mini+succulent+plant"
   },
   {
-    "picture": "https://picsum.photos/id/1092/600/400",
+    "picture": "imgs/christmasCandies.png",
     "price": 5.00,
     "description": "Holiday-themed candy or chocolate treat",
     "giftName": "Christmas Candy",
