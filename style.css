@@ -1,3 +1,19 @@
+body {
+    background-image: url(imgs/bg.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-y: bottom;
+    background-position-x: center;
+}
+
+.intro {
+    background-color:rgba(15, 23, 61, 0.2);
+    box-shadow:inset 0px 0px 11px -3px black, 0px 0px 11px 0px white;
+    padding:30px;
+    border-radius:6px;
+    border:2px solid white;
+}
 
 .btn {
     color:white;
@@ -5,4 +21,41 @@
 
 html {
     overflow-x:hidden;
+}
+
+.start {
+    background-color:rgb(96, 156, 196);
+    margin-top:10px;
+    border:2px solid white;
+    font-weight: bold;
+}
+
+.start:hover {
+    background-color:aliceblue;
+    color:black;
+    transform:scale3d(1.1, 1.1, 1.1);
+}
+
+.subtitle, .titleHeader, label {
+    /* color:rgb(0, 10, 143); */
+    color:white;
+}
+
+label {
+    margin-top:10px;
+    font-weight:bold;
+}
+
+input {
+    border-radius:6px;
+    background-color: rgba(243, 247, 255, 0.5);
+    border:2px solid black;
+    padding:2px;
+    border:2px solid rgb(72, 116, 146);
+}
+
+#theName, #budget {
+    margin-top:3px;
+    margin-bottom:3px;
+    padding-left:5px;
 }
