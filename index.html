@@ -36,7 +36,7 @@
                         <br>
                         <input id="theName" v-model="userName"> </input>
                         <br>
-                        <label for="budget">What budget would you like the gifts to be?</label>
+                        <label for="budget">What budget would you like the gifts to be? Enter a number greater than 1.</label>
                         <br>
                         <input id="budget" v-model="budget" type="number"> </input>
                     </form>
@@ -49,17 +49,21 @@
                 
 
                 <div class="col-md-12 col-sm-12 justify-content-center">
-                    <div class="wheelWrap">
+                    <!-- wheel wont show up unless there user puts atleast $2 in budget -->
+                    <div v-if="filterItems.length > 1" class="wheelWrap">
+
                         <div class="wheelContainer">
-<div class="wheel"></div>
-                            <button id="spin">Spin</button>
-                            
+                            <div id="wheel">
                                 <div class="slice" v-for="(item, index) in filterItems" :style="{ transform: 'rotate(' + (index * rotateSlice) + 'deg)',
                         width: sliceSize + 'px', 'margin-left': -(sliceSize/2) + 'px', 
-                        'background-color': colors[Math.floor(Math.random()*colors.length)], 
+                        'background-color': item.color, 
                         'writing-mode':'vertical-lr', 'font-size':'16px' }">{{item.giftName}}
                                     <!--will change to gift boxes to maintain mystery--></div>
                             </div>
+                            <button id="spin" @click="spinWheel">Spin</button>
+
+                            
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -78,8 +82,6 @@
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
     <script src="script.js"></script>
-    <script src="wheel.js"></script>
-    <!-- <script src="wheel.js"></script> -->
 </body>
 
 </html>
