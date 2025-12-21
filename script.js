@@ -47,15 +47,16 @@ const vue_app = Vue.createApp({
             this.itemsToPut.push(selectedItem);//this adds the selected item to the array of items to put
             setTimeout(() => {
     this.selectedGift = selectedItem;
-    this.openModal();
+    // this.openModal();
 }, 5000);
 
             
-        },
-        openModal: function () {
-    const myModal = new bootstrap.Modal(document.getElementById('myModal'));
-    myModal.show();
-}
+        }
+//         ,
+//         openModal: function () {
+//     const myModal = new bootstrap.Modal(document.getElementById('myModal'));
+//     myModal.show();
+// }
 
 
         
