@@ -42,7 +42,6 @@ html {
 }
 
 .subtitle, .titleHeader, label {
-    /* color:rgb(0, 10, 143); */
     color:white;
 }
 
@@ -85,6 +84,8 @@ input {
 .card {
         background-image:linear-gradient(rgb(184, 210, 228), rgb(96, 156, 196), rgb(146, 172, 189));
         border:2px solid white;
+                box-shadow:0px 0px 6px 0px rgb(15, 49, 71);
+
 }
 
 .card-img-top {
