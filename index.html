@@ -35,13 +35,12 @@
                         <br>
                         <input id="theName" v-model="userName" required> </input>
                         <br>
-                        <label for="budget">What budget would you like the gifts to be? Enter a number greater than 1.</label>
+                        <label for="budget">What budget would you like the gifts to be? <br><div style="color:rgb(129, 0, 0);"> Enter a number greater than 1.</div></label>
                         <br>
                         <input id="budget" v-model="budget" type="number" required> </input>
                     </form>
                     <button class="btn start" @click="startGame(true); filterItems">Start</button>
                     <a class="btn favorites" href="favorites.html">Favorites</a>
-                    <!-- <img :src="items[0].picture" alt=""> -->
                 </div>
             </div>
             
@@ -50,14 +49,14 @@
 
                 <div class="col-md-12 col-sm-12 justify-content-center">
                     <!-- wheel wont show up unless there user puts atleast $2 in budget -->
-                    <div v-show="filterItems.length >= 0" class="wheelWrap">
+                    <div v-show="filterItems.length > 1" class="wheelWrap">
 
                         <div class="wheelContainer">
                             <div id="wheel">
                                 <div class="slice" v-for="(item, index) in filterItems" :style="{ transform: 'rotate(' + (index * rotateSlice) + 'deg)',
                         width: sliceSize + 'px', 'margin-left': -(sliceSize/2) + 'px', 
                         'background-color': item.color, 
-                        'writing-mode':'vertical-lr', 'font-size':'16px' }"><img style="height:60px; width:60px;" src="imgs/giftBox.png" alt="gift box">
+                        'writing-mode':'vertical-lr', 'font-size':'16px' }"><img style="height:40px; width:40px; margin-bottom:130px;" src="imgs/giftBox.png" alt="gift box">
                                     <!--will change to gift boxes to maintain mystery--></div>
                             </div>
                             <button id="spin" @click="spinWheel">Spin</button>
@@ -74,15 +73,15 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body mx-3">
-        <img class="selectedImg" :src="selectedGift.picture" :alt="selectedGift.description">
-        <p class="mt-3">{{selectedGift.description}}</p>
-        <p>Price: ${{selectedGift.price}}</p>
-        <button class="btn"><a :href="selectedGift.source">Buy now</a></button>
+        <img class="selectedImg" :src="selectedGift.picture" :alt="selectedGift.description" :style="{'border-radius':'6px', 'border':'2px solid white'}">
+        <p class="mt-3 desc">{{selectedGift.description}}</p>
+        <p class="price"><strong>Price:</strong> ${{selectedGift.price}}</p>
+        <a class="btn buy" :href="selectedGift.source">Buy now</a>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" @click="respin">Re-Spin?</button>
-        <button type="button" class="btn btn-secondary" @click="refresh">Start Over</button>
-        <button type="button" class="btn btn-warning" @click="addToFavorites">Add to favorites</button>
+        <button type="button" class="btn respin" data-bs-dismiss="modal" @click="respin">Re-Spin?</button>
+        <button type="button" class="btn startover" @click="refresh">Start Over</button>
+        <button type="button" class="btn favorites" @click="addToFavorites">Add to favorites</button>
       </div>
     </div>
   </div>

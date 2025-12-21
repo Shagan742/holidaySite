@@ -57,6 +57,7 @@ const vue_app = Vue.createApp({
         },
         openModal: function () {
             const myModal = new bootstrap.Modal(document.getElementById('myModal'));
+            const audioYay= new Audio()
             myModal.show();
         },
         addToFavorites: function () {
