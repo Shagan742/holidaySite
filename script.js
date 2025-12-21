@@ -18,7 +18,8 @@ const vue_app = Vue.createApp({
             userName: "",
             budget: 0,
             colors: ["#F9F9F8", "#FFFFFF", "#FBFBFB", "#A9D9C6", "#CCD8E9", "#A0B3C6", "#D2D6D9", "#C2CBCA",
-                "#707E7F", "#5F5388", "#7A7EA1", "#7A9AAC", "#C4CBD4", "#497abbff", "#2b4c77ff", "#C4CBD4"]
+                "#707E7F", "#5F5388", "#7A7EA1", "#7A9AAC", "#C4CBD4", "#497abbff", "#2b4c77ff", "#C4CBD4"],
+            selectedGift: {}
         }
     },
     methods: { //does things with data and the math of the computed things
@@ -44,8 +45,20 @@ const vue_app = Vue.createApp({
         wheel.style.transition = 'transform 5s ease-out';
             wheel.style.transform = `rotate(${rotation}deg)`;
             this.itemsToPut.push(selectedItem);//this adds the selected item to the array of items to put
+            setTimeout(() => {
+    this.selectedGift = selectedItem;
+    this.openModal();
+}, 5000);
 
-        }
+            
+        },
+        openModal: function () {
+    const myModal = new bootstrap.Modal(document.getElementById('myModal'));
+    myModal.show();
+}
+
+
+        
     },
     computed: { //does math with the data, returning numbers i can use later 
         rotateSlice: function () {
@@ -68,3 +81,4 @@ const vue_app = Vue.createApp({
 })
 
 vue_app.mount('#app')
+
