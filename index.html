@@ -78,10 +78,12 @@
         <p class="price"><strong>Price:</strong> ${{selectedGift.price}}</p>
         <a class="btn buy" :href="selectedGift.source">Buy now</a>
       </div>
-      <div class="modal-footer">
+      <div class="modal-footer justify-content-center">
         <button type="button" class="btn respin" data-bs-dismiss="modal" @click="respin">Re-Spin?</button>
         <button type="button" class="btn startover" @click="refresh">Start Over</button>
-        <button type="button" class="btn favorites" @click="addToFavorites">Add to favorites</button>
+        <button type="button" class="btn favorites" @click="addToFavorites">Add Favorite</button>
+        <a type="button" class="btn favorites" href="favorites.html">Go to favorites</a>
+
       </div>
     </div>
   </div>

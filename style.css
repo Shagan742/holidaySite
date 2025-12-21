@@ -77,10 +77,18 @@ input {
 }
 
 .modal-content {
-    /* background-color:rgb(96, 156, 196); */
     background-image:linear-gradient(rgb(184, 210, 228), rgb(96, 156, 196), rgb(146, 172, 189));
     animation: modal-pop 1s;
 
+}
+
+.card {
+        background-image:linear-gradient(rgb(184, 210, 228), rgb(96, 156, 196), rgb(146, 172, 189));
+        border:2px solid white;
+}
+
+.card-img-top {
+    border-bottom:2px solid white;
 }
 
 .desc, .price {
