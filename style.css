@@ -21,16 +21,19 @@ body {
 
 html {
     overflow-x:hidden;
+    overflow-y: auto;
 }
 
-.start {
+.start, .favorites {
     background-color:rgb(96, 156, 196);
     margin-top:10px;
     border:2px solid white;
     font-weight: bold;
+    margin:10px;
+    margin-top:15px;
 }
 
-.start:hover {
+.start:hover, .favorites:hover {
     background-color:aliceblue;
     color:black;
     transform:scale3d(1.1, 1.1, 1.1);
