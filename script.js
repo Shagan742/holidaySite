@@ -69,6 +69,8 @@ const vue_app = Vue.createApp({
             //local storage things
             const storedFavs=JSON.stringify(this.addedToFavs) //stringify addedToFavs array for the localStorage to work
             localStorage.setItem('newFav', storedFavs); //set the addedToFavs array as an item in local storage
+
+            localStorage.setItem('username', this.userName);
         },
         refresh: function() {
             location.reload()

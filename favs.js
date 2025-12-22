@@ -2,7 +2,8 @@
 const vue_app = Vue.createApp({
     data() {//this is the data
         return {
-            addedToFavs: JSON.parse(localStorage.getItem('newFav'))
+            addedToFavs: JSON.parse(localStorage.getItem('newFav')),
+            userName: JSON.parse(localStorage.getItem('username'))|| 'User'
         }
     },
     methods: {
