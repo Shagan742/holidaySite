@@ -5,6 +5,9 @@ body {
     background-attachment: fixed;
     background-position-y: bottom;
     background-position-x: center;
+    font-family: "jaf-lapture", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .intro {
@@ -13,6 +16,10 @@ body {
     padding:30px;
     border-radius:6px;
     border:2px solid white;
+    font-family: "adorn-roman", sans-serif;
+font-weight: 400;
+font-style: normal;
+letter-spacing: 2px;
 }
 
 .btn {
@@ -66,6 +73,7 @@ input {
 
 .modal-title, .modal-body {
     color: rgb(15, 49, 71);
+    font-size: 30px;
 }
 
 
@@ -78,6 +86,10 @@ input {
 .modal-content {
     background-image:linear-gradient(rgb(184, 210, 228), rgb(96, 156, 196), rgb(146, 172, 189));
     animation: modal-pop 1s;
+    font-family: "adorn-condensed-sans", sans-serif;
+font-weight: 400;
+font-style: normal;
+letter-spacing: 2px;
 
 }
 
@@ -115,4 +127,9 @@ input {
     z-index: 5;
     color: white;
     text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+}
+h1 {
+    font-family: "ff-scala-jewel-pearl", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
